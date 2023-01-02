@@ -1,5 +1,7 @@
 ﻿using Managment.Application.Profiles;
+using MediatR;
 using Microsoft.Extensions.DependencyInjection;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,11 +14,13 @@ namespace Managment.Application
 {
     public static class ApplicationServiceRegisteration
     {
-        public static void ConfigureApplicationServices(this IServiceCollection services)
+        public static IServiceCollection ConfigureApplicationServices(this IServiceCollection Services)
         {
-            services.AddAutoMapper(Assembly.GetExecutingAssembly());
-            builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
+            Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            //  Services.AddAutoMapper(typeof(MappingProfile).Assembly);
+            Services.AddMediatR(Assembly.GetExecutingAssembly());
 
+            return Services;
         }
     }
 }
