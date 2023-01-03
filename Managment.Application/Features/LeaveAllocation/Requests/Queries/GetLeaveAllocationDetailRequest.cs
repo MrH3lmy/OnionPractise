@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Managment.Application.Features.LeaveAllocation.Requests.Queries
 {
-    public class GetLeaveAllocationDetailRequest : IRequest<List<LeaveAllocationDto>>
+    public class GetLeaveAllocationDetailRequest : IRequest<LeaveAllocationDto>
     {
         public int id { get; set; }
     }

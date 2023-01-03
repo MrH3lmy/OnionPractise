@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Managment.Application.Features.LeaveTypes.Handlers.Queries
 {
-    public class GetLeaveTypeDetailRequestHandler : IRequestHandler<GetLeaveTypeDetailRequest, List<LeaveTypeDto>>
+    public class GetLeaveTypeDetailRequestHandler : IRequestHandler<GetLeaveTypeDetailRequest, LeaveTypeDto>
     {
 
 
@@ -23,10 +23,10 @@ namespace Managment.Application.Features.LeaveTypes.Handlers.Queries
             _mapper = mapper;
         }
 
-        public async Task<List<LeaveTypeDto>> Handle(GetLeaveTypeDetailRequest request, CancellationToken cancellationToken)
+        public async Task<LeaveTypeDto> Handle(GetLeaveTypeDetailRequest request, CancellationToken cancellationToken)
         {
             var leaveType = await _leaveTypRepository.Get(request.id);
-            return _mapper.Map<List<LeaveTypeDto>>(leaveType);
+            return _mapper.Map<LeaveTypeDto>(leaveType);
         }
     }
 }
