@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
-using Managment.Application.DTOs;
+using Managment.Application.DTOs.LeaveAllocation;
 using Managment.Application.DTOs.LeaveRequest;
+using Managment.Application.DTOs.LeaveType;
 using Managment.Domain;
 using System;
 using System.Collections.Generic;

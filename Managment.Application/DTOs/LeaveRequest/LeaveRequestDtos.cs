@@ -1,4 +1,5 @@
 ﻿using Managment.Application.DTOs.Common;
+using Managment.Application.DTOs.LeaveType;
 using Managment.Domain;
 using System;
 using System.Collections.Generic;

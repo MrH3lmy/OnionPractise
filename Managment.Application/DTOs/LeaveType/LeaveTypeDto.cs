@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Managment.Application
+namespace Managment.Application.DTOs.LeaveType
 {
     public class LeaveTypeDto : BaseDto
     {

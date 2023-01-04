@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using Managment.Application.DTOs.LeaveType;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
