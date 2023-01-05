@@ -11,6 +11,8 @@ namespace Managment.Application.Features.LeaveRequest.Requests.Commands
     public class UpdateLeaveRequestCommand  : IRequest<Unit>
     {
         public LeaveRequestDtos leaveRequestDto;
+        public ChangeLeaveRequestApprovalDto changeLeaveRequestApprovalDto { get; set; }
+
 
     }
 }
