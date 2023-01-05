@@ -15,7 +15,7 @@ namespace Managment.Application.Profiles
     {
         public MappingProfile()
         {
-            CreateMap<LeaveRequestDtos, LeaveRequest>().ReverseMap();
+            CreateMap<LeaveRequest, LeaveRequestDtos>().ReverseMap();
             CreateMap<LeaveAlloction, LeaveAllocationDto>().ReverseMap();
             CreateMap<LeaveType, LeaveTypeDto>().ReverseMap();
 

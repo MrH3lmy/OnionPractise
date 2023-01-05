@@ -8,12 +8,8 @@ using System.Threading.Tasks;
 
 namespace Managment.Application.Features.LeaveTypes.Requests.Commands
 {
-    public class CreateLeaveTypeRequestCommand : IRequest<int>
+    public class UpdateLeaveTypeCommand : IRequest<Unit>
     {
-        // One pattern is to write all the fields in the actual request 
-        // Another pattern => 
-
         public LeaveTypeDto LeaveTypeDto { get; set; }
-            
-            }
+    }
 }

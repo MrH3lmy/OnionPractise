@@ -17,9 +17,4 @@
     <ProjectReference Include="..\Managment.Domain\Managment.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Features\LeaveRequest\Handlers\Commands\" />
-    <Folder Include="Features\LeaveRequest\Requests\Commands\" />
-  </ItemGroup>
-
 </Project>
